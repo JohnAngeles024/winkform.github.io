@@ -1,0 +1,135 @@
+<?php include("assets/mail/mailtemplate.php"); ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wink</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="./assets/img/top.jpg" alt="">
+    </header>
+    <main class="main">
+        <form method="post" action="">
+            <section class="content">
+                <h1 class="content__heading"><img src="./assets/img/content01.jpg" alt=""></h1>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <input type="checkbox" id="check1" name="check1" value="<?php echo htmlspecialchars($_POST['check1']); ?>">
+                        <label for="check1">ヨコ１／４ページ</label>
+                        <img src="./assets/img/item-01.jpg" alt="1">
+                    </li>
+                    <li class="content__item">
+                        <input type="checkbox" id="check2" name="check2" value="<?php echo htmlspecialchars($_POST['check2']); ?>">
+                        <label for="check2">ヨコ１／４ページ</label>
+                        <img src="./assets/img/item-02.jpg" alt="2">
+                    </li>
+                    <li class="content__item">
+                        <input type="checkbox" id="check3" name="check3" value="<?php echo htmlspecialchars($_POST['check3']); ?>">
+                        <label for="check3">ヨコ１／４ページ</label>
+                        <img src="./assets/img/item-03.jpg" alt="3">
+                    </li>
+                </ul>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <input type="checkbox" id="check4" name="check4" value="<?php echo htmlspecialchars($_POST['check4']); ?>">
+                        <label for="check4">ヨコ１／２ページ</label>
+                        <img src="./assets/img/item-04.jpg" alt="4">
+                    </li>
+                    <li class="content__item">
+                        <input type="checkbox" id="check5" name="check5" value="<?php echo htmlspecialchars($_POST['check5']); ?>">
+                        <label for="check5">１ページ</label>
+                        <img src="./assets/img/item-05.jpg" alt="5">
+                    </li>
+                    <li class="content__item">
+                        <input type="checkbox" id="check6" name="check6" value="<?php echo htmlspecialchars($_POST['check6']); ?>">
+                        <label for="check6">２ページ</label>
+                        <img src="./assets/img/item-06.jpg" alt="6">
+                    </li>
+                </ul>
+                <ul class="content__list content__list--03">
+                    <li class="content__item">
+                        <input type="checkbox" id="check7" name="check7" value="<?php echo htmlspecialchars($_POST['check7']); ?>">
+                        <label for="check7">表３<span>（裏表紙の裏）</span></label>
+                        <img src="./assets/img/item-07.jpg" alt="7">
+                    </li>
+                    <li class="content__item">
+                        <input type="checkbox" id="check8" name="check8" value="<?php echo htmlspecialchars($_POST['check8']); ?>">
+                        <label for="check8">表２<span>（表紙の裏）</span></label>
+                        <img src="./assets/img/item-08.jpg" alt="8">
+                    </li>
+                    <li class="content__item">
+                        <input type="checkbox" id="check9" name="check9" value="<?php echo htmlspecialchars($_POST['check9']); ?>">
+                        <label for="check9">表４<span>（裏表紙）</span></label>
+                        <img src="./assets/img/item-09.jpg" alt="9">
+                    </li>
+                </ul>
+            </section>
+            <section class="content">
+                <h2 class="content__heading"><img src="./assets/img/content02.jpg" alt=""></h2>
+                <div class="content__figure">
+                    <ul class="content__list content__list--absolute">
+                        <li class="content__item">
+                            <input type="checkbox" id="check1_01" name="check1_01" value="<?php echo htmlspecialchars($_POST['check1_01']); ?>">
+                            <label for="check1_01">１／２ページ</label>
+                        </li>
+                        <li class="content__item">
+                            <input type="checkbox" id="check1_02" name="check1_02" value="<?php echo htmlspecialchars($_POST['check1_02']); ?>">
+                            <label for="check1_02">１／４ページ</label>
+                        </li>
+                        <li class="content__item">
+                            <input type="checkbox" id="check1_03" name="check1_03" value="<?php echo htmlspecialchars($_POST['check1_03']); ?>">
+                            <label for="check1_03">１ページ</label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content">
+                <h2 class="content__heading"><img src="./assets/img/content03.png" alt=""></h2>
+                <div class="content__form">
+                    <h3 class="content__form-heading"><img src="./assets/img/form-heading.jpg" alt=""></h3>
+                    <div class="content__form--wrapper">
+                        <div class="content__form--wrapper-1">
+                            <ul>
+                                <li>
+                                    <label for="comp">貴社名・貴店名</label>
+                                    <input type="text" class="input" id="comp" required name="comp" value="<?php echo htmlspecialchars($_POST['comp']); ?>">
+                                </li>
+                                <li>
+                                    <label for="tel">電話番号</label>
+                                    <input type="text"  class="input" id="tel" required name="tel" placeholder="（   　  ）   -" value="<?php echo htmlspecialchars($_POST['tel']); ?>">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content__form--wrapper-2">
+                            <ul>
+                                <li>
+                                    <label for="fromname">ご担当者様</label>
+                                    <input type="text"  class="input"  id="fromname" required name="fromname" value="<?php echo htmlspecialchars($_POST['fromname']); ?>">
+                                    <span>様</span>
+                                </li>
+                                    <li><label for="add">住&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所</label>
+                                    <input type="text" class="input" id="add" required name="add" value="<?php echo htmlspecialchars($_POST['add']); ?>">
+                                    <span>〒</span>
+                                </li>    
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="content__contact" src="./assets/img/contact.png" alt="">
+                    <input type="submit" id="submit" name="submit" value="お問い合わせを送信">
+                </div>
+            </section>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

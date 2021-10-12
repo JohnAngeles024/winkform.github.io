@@ -1,0 +1,291 @@
+// *****************************
+//
+//	 _reset.scss
+//   last-update : 2013.09.03
+//
+// *****************************
+
+@mixin reset-html5 {
+
+    html,
+    body,
+    div,
+    span,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    abbr,
+    address,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    samp,
+    small,
+    strong,
+    sub,
+    sup,
+    var,
+    b,
+    i,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    dialog,
+    figure,
+    footer,
+    header,
+    menu,
+    nav,
+    section,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: normal;
+        line-height: 1;
+        vertical-align: bottom;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    article,
+    aside,
+    dialog,
+    figure,
+    footer,
+    header,
+    nav,
+    section {
+        display: block;
+    }
+
+    ul,
+    ol,
+    dl {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    a {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        color: #000;
+        text-decoration: none;
+        vertical-align: baseline;
+        background: transparent;
+        outline: none;
+    }
+
+    img {
+        vertical-align: bottom;
+    }
+
+    ins {
+        background-color: #ff9;
+        color: #000;
+        text-decoration: none;
+    }
+
+    mark {
+        background-color: #ff9;
+        color: #000;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    abbr[title],
+    dfn[title] {
+        border-bottom: 1px dotted #000;
+        cursor: help;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #cccccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    input,
+    select {
+        vertical-align: middle;
+    }
+}
+
+@mixin reset-html4 {
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    font,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 14px;
+        font-family: inherit;
+        vertical-align: bottom;
+        color: #000;
+        text-decoration: none;
+    }
+
+    :focus {
+        outline: 0;
+    }
+
+    body {
+        line-height: 1;
+        color: black;
+        background: white;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    caption,
+    th,
+    td {
+        text-align: left;
+        font-weight: normal;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+    }
+
+    blockquote,
+    q {
+        quotes: '''';
+    }
+
+    img {
+        vertical-align: bottom;
+    }
+}
